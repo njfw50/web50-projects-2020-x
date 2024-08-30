@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Image Search</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+        margin: 0;
+      }
+
+      h1 {
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      .top-right-links {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+
+      .top-right-links a {
+        margin-left: 15px;
+        text-decoration: none;
+        color: #4285f4;
+      }
+
+      .top-right-links a:hover {
+        text-decoration: underline;
+      }
+
+      form {
+        text-align: center;
+      }
+
+      input[type="text"] {
+        width: 300px;
+        padding: 10px;
+        border-radius: 25px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+      }
+
+      input[type="submit"] {
+        margin-top: 10px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: #4285f4;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #357ae8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-right-links">
+      <a href="index.html">Search</a>
+      <a href="advancedsearch.html">Advanced Search</a>
+    </div>
+    <div>
+      <h1>Images</h1>
+    </div>
+    <form action="https://www.google.com/search?tbm=isch">
+      <input type="text" name="q" placeholder="Search Images..." />
+      <input type="submit" value="Search Images" />
+    </form>
+  </body>
+</html>
